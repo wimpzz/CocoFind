@@ -1,6 +1,6 @@
 # CocoFind
 
-Welcome to CocoFind, an exclusive website designed for coconut tree owners in Polillo, Quezon, Philippines. Our platform's primary goal is to ensure the health and prosperity of coconut trees. CocoFind utilizes an advanced image analysis system based on CNN (Convolutional Neural Network) to provide a seamless solution for detecting coconut tree infections.
+Welcome to CocoFind, a website designed for coconut tree owners in Polillo, Quezon, Philippines. Our platform's primary goal is to ensure the health and prosperity of coconut trees. CocoFind utilizes an advanced image analysis system based on CNN (Convolutional Neural Network) to provide a seamless solution for detecting coconut tree infections.
 
 ## Features
 
@@ -10,9 +10,9 @@ Welcome to CocoFind, an exclusive website designed for coconut tree owners in Po
 
 ## How to Use -- Admin
 
-1. **Visit cocodatahub.com**
+1. **Visit [cocodatahub.com](https://cocodatahub.com)**
 
-   Open your web browser and go to cocodatahub.com to access the CocoFind website.
+   Open your web browser and go to [cocodatahub.com](https://cocodatahub.com) to access the CocoFind website.
 
 2. **Login as Admin**
 
@@ -36,9 +36,9 @@ Welcome to CocoFind, an exclusive website designed for coconut tree owners in Po
 
 ## How to Use -- User
 
-1. **Visit cocodatahub.com**
+1. **Visit [cocodatahub.com](https://cocodatahub.com)**
 
-   Open your web browser and go to cocodatahub.com to access the CocoFind website.
+   Open your web browser and go to [cocodatahub.com](https://cocodatahub.com) to access the CocoFind website.
 
 2. **View Data**
 
