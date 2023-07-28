@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+nav{
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(#a23451,#c5626d);
+     /*background-color: #a23451; */
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    z-index: 99;
+}
+  
+nav .navbar{
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items:left;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0 50px;
+}
+
+.navbar .logo{
+    display:flex;
+    justify-content:left;
+    align-items: center;
+}
+
+.navbar .logo a{
+    font-size: 28px;
+    color: wheat;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar img{
+    height: 50px;
+    width: 50px;
+}
+
+nav .navbar .nav-links{
+    line-height: 80px;
+    padding-left: 20%;
+    height: 100%;
+}
+
+nav .navbar .links{
+    display: flex;
+    align-items: center;
+}
+  
+nav .navbar .links li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 10px;
+}
+
+nav .navbar .links li a{
+    height: 100%;
+    text-decoration: none;
+    color: wheat;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+nav .navbar .links li a:hover{
+    text-decoration: underline;
+}
+
+.links li:hover .htmlcss-arrow,
+.links li:hover .js-arrow{
+    transform: rotate(180deg);
+}
+
+nav .navbar .links li .arrow{
+    height: 100%;
+    width: 22px;
+    line-height: 70px;
+    text-align: center;
+    display: inline-block;
+    color: #a00303;
+    transition: all 0.5s ease;
+}
+  
+nav .navbar .links li .sub-menu{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    line-height: 40px;
+    background: #a00303;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 10px 10px;
+    display: none;
+    z-index: 2;
+    width: 230px;
+}
+
+nav .navbar .links li:hover .htmlCss-sub-menu,
+nav .navbar .links li:hover .js-sub-menu{
+    display: block;
+}
+
+.navbar .links li .sub-menu li{
+    padding: 5px 20px;
+    border-top: 1px solid white;
+}
+
+.navbar .links li .sub-menu a{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navbar .links li .sub-menu .more-arrow{
+    line-height: 40px;
+}
+
+.navbar .links li .htmlCss-more-sub-menu{
+    line-height: 40px; 
+}
+  
+.navbar .links li .sub-menu .more-sub-menu{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    border-radius: 0 4px 4px 4px;
+    z-index: 1;
+    display: none;
+}
+
+.links li .sub-menu .more:hover .more-sub-menu{
+    display: block;
+}
+
+.main {
+  width: 100%;
+  height: 200vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(images/coconut-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 100px 200px; /* Add left and right padding */
+}
+
+.input-group input[type="text"]{
+    padding-right:50px;
+    margin-right:0px;
+}
+
+.input-group button[type="submit"] {
+    position: absolute;
+    margin-top: -10px;
+    padding-left: 100px;
+    padding-right: 10px;
+    right: 0;
+    height: 50px;
+    color: wheat;
+    background-color: #c5626d;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 0 20px 20px 0;
+    letter-spacing: 1px;
+    transition: 0.7s ease;
+}
+
+.input[type="text"] {
+    padding: 10px;
+    height: auto;
+    width: 55px;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #000016;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Style for the popup content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style for the close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
